@@ -11,7 +11,7 @@ export default function Tag() {
 
     async function fetchData(){
       setloader(true);
-        const url=`https://api.giphy.com/v1/gifs/random?api_key=${ApiKey}&tag=${tag}`
+        const url=`https://api.giphy.com/v1/gifs/random?api_key=SIj3J0z8wuRHC6x4plOu1Odnu8SXmR08&tag=${tag}`
         const {data}= await axios.get(url);
         const imgsource=data.data.images.downsized_large.url;
         console.log(imgsource)

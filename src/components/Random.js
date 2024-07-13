@@ -7,7 +7,7 @@ export default function Random() {
     const [loader, setloader]=useState(false);
     async function fetchData(){
       setloader(true);
-        const url=`https://api.giphy.com/v1/gifs/random?api_key=${ApiKey}`
+        const url=`https://api.giphy.com/v1/gifs/random?api_key=SIj3J0z8wuRHC6x4plOu1Odnu8SXmR08`
         const {data}= await axios.get(url);
         const imgsource=data.data.images.downsized_large.url;
         console.log(imgsource)
